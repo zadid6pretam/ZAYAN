@@ -1,75 +1,35 @@
 # ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
 
-![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange.svg)
-![PyPI](https://img.shields.io/badge/PyPI-zayan-blue.svg)
-![Status](https://img.shields.io/badge/status-ICPR%202026%20accepted-purple.svg)
-![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
-
-**ZAYAN** is a self-supervised, feature-centric contrastive learning framework for tabular remote sensing and environmental data. It learns robust, redundancy-minimized feature embeddings using feature-level contrastive pretraining and then uses those embeddings inside a Transformer classifier for downstream prediction.
-
-The paper **“ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data”** has been accepted for presentation at the **28th International Conference on Pattern Recognition (ICPR 2026)** in Lyon, France.
-
----
-
-## Architecture
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Task](https://img.shields.io/badge/Task-Tabular%20Remote%20Sensing-orange)
+![Model](https://img.shields.io/badge/Model-ZAYAN-blueviolet)
+![Architecture](https://img.shields.io/badge/Architecture-Disentangled%20Contrastive%20Transformer-informational)
+![Learning](https://img.shields.io/badge/Learning-Feature--Level%20Contrastive-purple)
+![Objective](https://img.shields.io/badge/Objective-Zero--Anchor%20Encoding-critical)
+![Domain](https://img.shields.io/badge/Domain-Remote%20Sensing%20%2F%20Environmental%20Data-teal)
+![Conference](https://img.shields.io/badge/Conference-ICPR%202026-blue)
+![Status](https://img.shields.io/badge/Status-Accepted-brightgreen)
+![PyPI](https://img.shields.io/badge/PyPI-zayan-blue)
 
 <p align="center">
-  <img src="ZAYAN_Architecture.png" alt="ZAYAN architecture" width="100%">
+  <img src="ZAYAN_Architecture.png" alt="ZAYAN Architecture" width="1000">
 </p>
 
-<p align="center">
-  <em>
-  Overview of ZAYAN: tabular features are augmented using noise, warping, and masking; encoded through the ZAYAN-CL feature-level contrastive module; regularized with a redundancy penalty; and then passed to the ZAYAN-T Transformer classifier for final prediction.
-  </em>
-</p>
+ZAYAN is a self-supervised, feature-centric contrastive learning framework for **tabular remote sensing and environmental data**. ZAYAN stands for **Zero-Anchor dYnamic feAture eNcoding**. Rather than applying contrastive learning at the sample or image-patch level, it learns representations at the **feature level**, where each feature is dynamically augmented, encoded, contrasted, and regularized to reduce redundancy. The learned feature embeddings are then used by a Transformer classifier that preserves the contrastive feature geometry for downstream prediction. This design makes ZAYAN especially suitable for heterogeneous tabular sensing data derived from satellite products, GIS layers, environmental indicators, and remote-sensing-driven prediction tasks. Across multiple remote-sensing and environmental tabular benchmarks, ZAYAN achieves strong classification performance, robustness, and generalization compared with classical machine learning, tree ensembles, tabular neural networks, and recent tabular foundation-style baselines.
 
----
+## Citation
 
-## Overview
+Al Zadid Sultan Bin Habib, Tanpia Tasnim, Md. Ekramul Islam, and Muntasir Tabasum.  
+**“ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data.”**  
+In *Proceedings of the 28th International Conference on Pattern Recognition (ICPR)*, Lyon, France, 2026.
 
-ZAYAN stands for **Zero-Anchor dYnamic feAture eNcoding**. It consists of two main modules:
-
-1. **ZAYAN-CL**  
-   A feature-level contrastive learning module that learns feature embeddings without class labels or explicit sample anchors.
-
-2. **ZAYAN-T**  
-   A Transformer-based classifier that uses the pretrained feature embeddings as structured feature tokens for supervised classification.
-
-3. **ZAYAN**  
-   A high-level wrapper that runs contrastive pretraining, supervised Transformer training, and evaluation.
-
-Unlike conventional sample-level contrastive learning, ZAYAN performs contrastive learning at the **feature level**. It aligns augmented views of the same feature while reducing redundancy among different feature embeddings.
-
----
-
-## Key Features
-
-- Feature-level self-supervised contrastive pretraining
-- Zero-anchor contrastive objective for tabular remote sensing data
-- Redundancy reduction through Gram-matrix decorrelation
-- Transformer classifier conditioned on learned feature embeddings
-- Preservation loss to retain the geometry learned during contrastive pretraining
-- Support for multiclass and binary classification
-- Class-balanced supervised training
-- Evaluation with accuracy, precision, recall, and F1-score
-- Demo notebook with Optuna-based hyperparameter tuning
-- Urban Land Cover experiment with diagnostics and analysis
-
----
-
-## Repository Structure
-
-```text
-.
-├── assets/
-│   └── ZAYAN_Architecture.png
-├── zayan/
-│   ├── __init__.py
-│   └── zayan.py
-├── notebooks/
-│   └── ZAYAN_Experiment.ipynb
-├── README.md
-├── pyproject.toml
-├── LICENSE
-└── MANIFEST.in
+BibTeX:
+```bibtex
+@inproceedings{habib2026zayan,
+  title     = {ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data},
+  author    = {Habib, Al Zadid Sultan Bin and Tasnim, Tanpia and Islam, Md. Ekramul and Tabasum, Muntasir},
+  booktitle = {Proceedings of the 28th International Conference on Pattern Recognition},
+  year      = {2026},
+  address   = {Lyon, France}
+}
