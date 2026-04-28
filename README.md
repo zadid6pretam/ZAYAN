@@ -117,3 +117,117 @@ pip install .
 ```bash
 pip install zayan
 ```
+## Example Usage
+
+Below is a minimal example showing how to train ZAYAN on a dummy tabular classification dataset using contrastive pretraining followed by Transformer-based supervised classification.
+
+```python
+import numpy as np
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+from zayan import ZAYAN
+
+# Dummy tabular classification data
+np.random.seed(42)
+
+X, y = make_classification(
+    n_samples=300,
+    n_features=40,
+    n_informative=15,
+    n_redundant=10,
+    n_classes=3,
+    random_state=42
+)
+
+X = X.astype(np.float32)
+y = y.astype(np.int64)
+
+# Train/test split
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+
+# Standardize features
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train).astype(np.float32)
+X_test = scaler.transform(X_test).astype(np.float32)
+
+# ZAYAN-CL hyperparameters
+cl_params = {
+    "emb_dim": 128,
+    "hidden_dim": 256,
+    "tau": 0.1,
+    "lambd": 1.0,
+    "sigma": 0.1,
+    "mask_prob": 0.1,
+    "dropout": 0.1,
+}
+
+# ZAYAN-T hyperparameters
+t_params = {
+    "nhead": 4,
+    "num_layers": 2,
+    "gamma": 1.0,
+    "dropout": 0.1,
+}
+
+# Initialize ZAYAN
+model = ZAYAN(
+    cl_params=cl_params,
+    t_params=t_params,
+    classification_type="multiclass",
+    num_classes=len(np.unique(y_train)),
+    device="cpu"  # use "cuda" if a GPU is available
+)
+
+# Fit ZAYAN
+results = model.fit(
+    X_train,
+    y_train,
+    X_test=X_test,
+    y_test=y_test,
+    cl_epochs=50,
+    cl_lr=1e-3,
+    cl_weight_decay=1e-4,
+    t_epochs=30,
+    t_lr=1e-4,
+    t_weight_decay=1e-4,
+    batch_size=32
+)
+
+print("Evaluation results:", results)
+```
+
+- The returned results dictionary contains classification metrics. For multiclass classification, ZAYAN reports:
+
+```python
+{
+    "test": {
+        "accuracy": ...,
+        "macro_precision": ...,
+        "macro_recall": ...,
+        "macro_f1": ...
+    }
+}
+```
+
+- For binary classification, set:
+
+```python
+classification_type="binary"
+num_classes=2
+```
+
+- and the model reports accuracy, precision, recall, and F1-score.
+
+## For fuller experiments, Optuna tuning, and diagnostic analysis, see:
+
+- ZAYAN_Experiment.ipynb
+
+This notebook contains the Urban Land Cover experiment from the ZAYAN workflow, including Optuna-based hyperparameter tuning, training diagnostics, evaluation metrics, and analysis plots.
