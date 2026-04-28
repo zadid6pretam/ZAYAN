@@ -31,6 +31,7 @@ BibTeX:
   year      = {2026},
   address   = {Lyon, France}
 }
+```
 
 ## Files and Repository Structure
 
