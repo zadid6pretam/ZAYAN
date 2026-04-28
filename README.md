@@ -31,3 +31,89 @@ BibTeX:
   year      = {2026},
   address   = {Lyon, France}
 }
+
+## Files and Repository Structure
+
+### Python package: `zayan/`
+
+This folder contains the core ZAYAN implementation:
+
+- `__init__.py` - Package initializer and high-level API exports.
+- `zayan.py` - Main ZAYAN implementation, including `ZAYAN_CL`, `ZAYAN_T`, and the high-level `ZAYAN` wrapper for contrastive pretraining, Transformer-based supervised training, and evaluation.
+
+### Notebooks
+
+- **`ZAYAN_Experiment.ipynb`**  
+  Contains the main experiment notebook for ZAYAN. The notebook includes an Optuna-tuned run on the Urban Land Cover dataset, along with data preprocessing, ZAYAN-CL feature-level contrastive pretraining, ZAYAN-T supervised Transformer training, evaluation, and diagnostic analysis.
+
+- **`ZAYAN_PIP_Install_Check.ipynb`**  
+  Demonstration of ZAYAN using pip installation, including simple toy examples for importing the package, initializing `ZAYAN_CL`, `ZAYAN_T`, and `ZAYAN`, and running a minimal classification workflow.
+
+### Other top-level files
+
+- **`requirements.txt`** - Python dependencies required to run the ZAYAN package and notebooks.
+- **`ZAYAN_Architecture.png`** - High-level architecture diagram of the ZAYAN framework.
+- **`LICENSE`** - MIT license for this repository.
+- **`README.md`** - Project overview, installation, usage instructions, and citation information.
+- **`.gitignore`** - Standard Git ignore rules for Python and Jupyter projects.
+- **`pyproject.toml`** - Build system and packaging metadata for installation and PyPI upload.
+- **`setup.cfg`** - Optional package configuration and installation metadata, if used alongside `pyproject.toml`.
+
+### Tested Environment
+
+- Python 3.10.13
+- torch 2.0.0+
+- numpy 1.23.0+
+- pandas 1.5.0+
+- scikit-learn 1.2.0+
+- matplotlib 3.7.0+
+- optuna 3.6.0+
+- jupyterlab 4.0.0+
+
+## Installation
+
+You can install **ZAYAN** in several ways depending on your workflow.
+
+---
+
+### Option 1: Clone the Repository (Recommended for Development)
+
+```bash
+git clone https://github.com/zadid6pretam/ZAYAN.git
+cd ZAYAN
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Option 2: Install Directly from GitHub (No Cloning Needed)
+
+```bash
+pip install "git+https://github.com/zadid6pretam/ZAYAN.git"
+```
+
+### Option 3: Use a Virtual Environment
+
+```bash
+python -m venv zayan-env
+source zayan-env/bin/activate  # On Windows: zayan-env\Scripts\activate
+
+git clone https://github.com/zadid6pretam/ZAYAN.git
+cd ZAYAN
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Option 4: Local Install Without Editable Mode
+
+```bash
+git clone https://github.com/zadid6pretam/ZAYAN.git
+cd ZAYAN
+pip install -r requirements.txt
+pip install .
+```
+
+### Option 5: Install from PyPI
+
+```bash
+pip install zayan
+```
