@@ -20,9 +20,7 @@ ZAYAN is a self-supervised, feature-centric contrastive learning framework for *
 
 ## Citation
 
-Al Zadid Sultan Bin Habib, Tanpia Tasnim, Md. Ekramul Islam, and Muntasir Tabasum.  
-**“ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data.”**  
-In *Proceedings of the 28th International Conference on Pattern Recognition (ICPR)*, Lyon, France, 2026.
+Al Zadid Sultan Bin Habib, Tanpia Tasnim, Md. Ekramul Islam, and Muntasir Tabasum. **“ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data.”** In *Proceedings of the 28th International Conference on Pattern Recognition (ICPR)*, Lyon, France, 2026.
 
 BibTeX:
 ```bibtex
