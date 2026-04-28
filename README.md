@@ -231,3 +231,85 @@ num_classes=2
 - ZAYAN_Experiment.ipynb
 
 This notebook contains the Urban Land Cover experiment from the ZAYAN workflow, including Optuna-based hyperparameter tuning, training diagnostics, evaluation metrics, and analysis plots.
+
+
+## Related Work and Project Context
+
+ZAYAN is part of our broader research and collaboration portfolio on tabular deep learning, feature-centric representation learning, and structured data modeling. However, **ZAYAN is not part of my PhD dissertation work**; it is a separate collaborative project focused on tabular remote sensing and environmental data. My PhD research primarily focuses on high-dimensional tabular learning, feature ordering, HDLSS modeling, and tabular generative frameworks.
+
+### TabSeq
+
+Our earlier work on sequential modeling for tabular data:
+
+- **TabSeq: A Framework for Deep Learning on Tabular Data via Sequential Ordering**  
+  GitHub: https://github.com/zadid6pretam/TabSeq  
+  Springer ICPR 2024 proceedings: https://link.springer.com/chapter/10.1007/978-3-031-78128-5_27
+
+```bibtex
+@inproceedings{habib2024tabseq,
+  title={TabSeq: A Framework for Deep Learning on Tabular Data via Sequential Ordering},
+  author={Habib, Al Zadid Sultan Bin and Wang, Kesheng and Hartley, Mary-Anne and Doretto, Gianfranco and A. Adjeroh, Donald},
+  booktitle={International Conference on Pattern Recognition},
+  pages={418--434},
+  year={2024},
+  organization={Springer}
+}
+```
+- If you are interested in sequential ordering for tabular data, deep sequential backbones, and early feature-ordering-based tabular modeling, please also refer to the TabSeq repository and paper.
+
+## DynaTab
+
+Our more recent work on learned feature ordering for high-dimensional tabular data:
+
+- **DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data**
+GitHub: https://github.com/zadid6pretam/DynaTab
+
+```bibtex
+@inproceedings{habib2026dynatab,
+  title     = {{DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data}},
+  author    = {Habib, Al Zadid Sultan Bin and Doretto, Gianfranco and Adjeroh, Donald A.},
+  booktitle = {Proceedings of the AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI)},
+  year      = {2026},
+  series    = {PMLR}
+}
+```
+- If you are interested in learned feature ordering, neural rewiring for high-dimensional tabular data, and sequential backbone design for HDLSS settings, please also refer to the DynaTab repository and paper.
+- DynaTab has completed camera-ready submission, and the public proceedings version is expected to appear online later.
+
+### BSTabDiff
+
+Our generative modeling framework for high-dimensional low-sample-size tabular data:
+- BSTabDiff: Block-Subunit Diffusion Priors for High-Dimensional Tabular Data Generation
+GitHub: https://github.com/zadid6pretam/BSTabDiff
+
+```bibtex
+@inproceedings{habib2026bstabdiff,
+  title     = {BSTabDiff: Block-Subunit Diffusion Priors for High-Dimensional Tabular Data Generation},
+  author    = {Habib, Al Zadid Sultan Bin and Ahamed, Md Younus and Gyawali, Prashnna Kumar and Doretto, Gianfranco and Adjeroh, Donald A.},
+  booktitle = {ICLR 2026 2nd Workshop on Deep Generative Models in Machine Learning: Theory, Principle and Efficacy (DeLTa)},
+  year      = {2026}
+}
+```
+- If you are interested in high-dimensional tabular synthesis, block-subunit generation, and diffusion/flow priors for HDLSS tabular data, please also refer to the BSTabDiff repository and paper.
+
+### ZAYAN
+
+This repository corresponds to our separate collaborative work on tabular remote sensing and environmental data:
+- ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
+GitHub: https://github.com/zadid6pretam/ZAYAN
+
+```bibtex
+@inproceedings{habib2026zayan,
+  title     = {ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data},
+  author    = {Habib, Al Zadid Sultan Bin and Tasnim, Tanpia and Islam, Md. Ekramul and Tabasum, Muntasir},
+  booktitle = {Proceedings of the 28th International Conference on Pattern Recognition},
+  year      = {2026},
+  address   = {Lyon, France}
+}
+```
+- ZAYAN focuses on feature-level contrastive learning and Transformer-based classification for tabular remote sensing and environmental datasets.
+- Unlike my PhD dissertation projects on high-dimensional tabular learning and HDLSS modeling, ZAYAN was developed as a separate collaboration.
+
+## Contact
+
+For any questions, issues, or suggestions related to this repository, please feel free to contact us or open an issue on GitHub.
