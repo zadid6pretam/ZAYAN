@@ -8,7 +8,7 @@
 ![Learning](https://img.shields.io/badge/Learning-Feature--Level%20Contrastive-purple)
 ![Objective](https://img.shields.io/badge/Objective-Zero--Anchor%20Encoding-critical)
 ![Domain](https://img.shields.io/badge/Domain-Remote%20Sensing%20%2F%20Environmental%20Data-teal)
-![Conference](https://img.shields.io/badge/Conference-ICPR%202026-blue)
+[![Conference](https://img.shields.io/badge/Conference-ICPR%202026-blue)](https://icpr2026.org/)
 ![Status](https://img.shields.io/badge/Status-Accepted-brightgreen)
 ![PyPI](https://img.shields.io/badge/PyPI-zayan-blue)
 
