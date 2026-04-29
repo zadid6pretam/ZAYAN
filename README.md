@@ -293,6 +293,24 @@ GitHub: https://github.com/zadid6pretam/BSTabDiff
 ```
 - If you are interested in high-dimensional tabular synthesis, block-subunit generation, and diffusion/flow priors for HDLSS tabular data, please also refer to the BSTabDiff repository and paper.
 
+### iStructTab
+
+Our structured feature sequencing framework for multimodal learning with image and tabular data. This work is part of my PhD research on feature-structured tabular deep learning and multimodal tabular representation learning.
+
+- **iStructTab: Structured Feature Sequencing for Multimodal Learning of Image and Tabular Data**  
+  GitHub: https://github.com/zadid6pretam/iStructTab
+
+```bibtex
+@inproceedings{habib2026istructtab,
+  title     = {iStructTab: Structured Feature Sequencing for Multimodal Learning of Image and Tabular Data},
+  author    = {Habib, Al Zadid Sultan Bin and Ahamed, Md Younus and Gyawali, Prashnna and Doretto, Gianfranco and Adjeroh, Donald A.},
+  booktitle = {Proceedings of the 28th International Conference on Pattern Recognition},
+  year      = {2026},
+  address   = {Lyon, France}
+}
+```
+- If you are interested in structured feature sequencing, multimodal fusion of image and tabular data (the integration problem), and feature order-aware tabular representation learning, please also refer to the iStructTab repository and paper.
+
 ### ZAYAN
 
 This repository corresponds to our separate collaborative work on tabular remote sensing and environmental data:
