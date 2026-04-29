@@ -295,7 +295,7 @@ GitHub: https://github.com/zadid6pretam/BSTabDiff
 
 ### iStructTab
 
-Our structured feature sequencing framework for multimodal learning with image and tabular data. This work is part of my PhD research on feature-structured tabular deep learning and multimodal tabular representation learning.
+Our structured feature sequencing framework for multimodal learning with image and tabular data. This work is part of my PhD research on feature sequencing or ordering for multimodal image-tabular representation learning.
 
 - **iStructTab: Structured Feature Sequencing for Multimodal Learning of Image and Tabular Data**  
   GitHub: https://github.com/zadid6pretam/iStructTab
