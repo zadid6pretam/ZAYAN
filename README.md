@@ -43,6 +43,8 @@ This folder contains the core ZAYAN implementation:
 - `zayan.py` - Main ZAYAN implementation, including `ZAYAN_CL`, `ZAYAN_T`, and the high-level `ZAYAN` wrapper for contrastive pretraining, Transformer-based supervised training, and evaluation.
 
 ### Notebooks
+**Since May 30, 2026, all Jupyter notebook previews are failing with "An error occurred" message. This affects both my own notebooks and others' repositories. Using nbformat v5.10.4 and nbconvert v7.17.1. Notebooks are valid and working locally. This appears to be a GitHub-side rendering issue.**
+- See: https://github.com/orgs/community/discussions/197350
 
 - **`ZAYAN_Experiment.ipynb`**  
   Contains the main experiment notebook for ZAYAN. The notebook includes an Optuna-tuned run on the Urban Land Cover dataset, along with data preprocessing, ZAYAN-CL feature-level contrastive pretraining, ZAYAN-T supervised Transformer training, evaluation, and diagnostic analysis.
