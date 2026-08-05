@@ -32,6 +32,7 @@ BibTeX:
   address   = {Lyon, France}
 }
 ```
+- Paper: https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1
 - arXiv: https://arxiv.org/abs/2604.27606v1
 
 ## Files and Repository Structure
