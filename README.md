@@ -250,7 +250,7 @@ Our recent ICML 2026 Regular main conference paper on feature ordering and compr
 - **GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data**
 
 - GitHub: https://github.com/zadid6pretam/GOTabPFN
-- - **Find it on ICML portal:** https://icml.cc/virtual/2026/poster/62523
+- **Find it on ICML portal:** https://icml.cc/virtual/2026/poster/62523
 - **Project Webpage:** https://www.zadidhabib.com/gotabpfn.html
 - **OpenReview:** https://openreview.net/forum?id=fpqfV3lCIB
 - **Hugging Face Space:** [ZeroGPU Live Demo](https://zadid6pretam-GOTabPFN.hf.space) *(recommended; faster GPU-backed testing)* | [CPU Backup Demo](https://zadid6pretam-GOTabPFN-CPU.hf.space) *(use if ZeroGPU is unavailable)* | [ZeroGPU Space Repository](https://huggingface.co/spaces/zadid6pretam/GOTabPFN) | [CPU Backup Space Repository](https://huggingface.co/spaces/zadid6pretam/GOTabPFN_CPU)
