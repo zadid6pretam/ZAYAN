@@ -1,4 +1,4 @@
-# ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
+# ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data (ICPR 2026 Oral || RRPR Badge)
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
