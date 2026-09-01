@@ -12,7 +12,7 @@
 ![Domain](https://img.shields.io/badge/Domain-Remote%20Sensing%20%2F%20Environmental%20Data-teal)
 
 [![ICPR 2026](https://img.shields.io/badge/ICPR%202026-Oral%20Presentation-blue)](https://icpr2026.org/sessions/oral5E/)
-[![Status](https://img.shields.io/badge/Status-Accepted-brightgreen)](https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1)
+[![Status](https://img.shields.io/badge/Status-Published-brightgreen)](https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1)
 [![RRPR](https://img.shields.io/badge/ICPR%202026-RRPR%20Badge-success)](https://iapr-tc22-rrl.github.io/icpr2026/results/)
 [![Paper](https://img.shields.io/badge/Paper-Springer-red)](https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1)
 [![arXiv](https://img.shields.io/badge/arXiv-2604.27606-b31b1b)](https://arxiv.org/abs/2604.27606)
