@@ -1,16 +1,21 @@
 # ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-zayan-blue)](https://pypi.org/project/zayan/)
+
 ![Task](https://img.shields.io/badge/Task-Tabular%20Remote%20Sensing-orange)
 ![Model](https://img.shields.io/badge/Model-ZAYAN-blueviolet)
 ![Architecture](https://img.shields.io/badge/Architecture-Disentangled%20Contrastive%20Transformer-informational)
 ![Learning](https://img.shields.io/badge/Learning-Feature--Level%20Contrastive-purple)
 ![Objective](https://img.shields.io/badge/Objective-Zero--Anchor%20Encoding-critical)
 ![Domain](https://img.shields.io/badge/Domain-Remote%20Sensing%20%2F%20Environmental%20Data-teal)
-[![Conference](https://img.shields.io/badge/Conference-ICPR%202026-blue)](https://icpr2026.org/)
-![Status](https://img.shields.io/badge/Status-Accepted-brightgreen)
-![PyPI](https://img.shields.io/badge/PyPI-zayan-blue)
+
+[![ICPR 2026](https://img.shields.io/badge/ICPR%202026-Oral%20Presentation-blue)](https://icpr2026.org/sessions/oral5E/)
+[![Status](https://img.shields.io/badge/Status-Accepted-brightgreen)](https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1)
+[![RRPR](https://img.shields.io/badge/ICPR%202026-RRPR%20Badge-success)](https://iapr-tc22-rrl.github.io/icpr2026/results/)
+[![Paper](https://img.shields.io/badge/Paper-Springer-red)](https://link.springer.com/chapter/10.1007/978-3-032-31397-3_1)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.27606-b31b1b)](https://arxiv.org/abs/2604.27606)
 
 <p align="center">
   <img src="ZAYAN_Architecture.png" alt="ZAYAN Architecture" width="1000">
